@@ -1,0 +1,24 @@
+{
+  "name": "sunner-bank",
+  "version": "1.0.0",
+  "description": "Simulação básica de uma aplicação web para exercitar o uso de herança e padrão MVC no javascript vanilla.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arcaino/sunner-bank.git"
+  },
+  "author": "Arcaino",
+  "license": "ISC",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/Arcaino/sunner-bank/issues"
+  },
+  "homepage": "https://github.com/Arcaino/sunner-bank#readme"
+}
