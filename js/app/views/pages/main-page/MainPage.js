@@ -1,6 +1,7 @@
 class MainPage{
 
     static template(){
+
         return `
             <h1 class="text-center">Negociações</h1>
         
@@ -23,7 +24,7 @@ class MainPage{
                     <input id="valor" type="number" class="form-control"  min="0.01" step="0.01" value="0.0" required />
                 </div>
                 
-                <button class="btn btn-primary" type="submit">Incluir</button>
+                <button class="btn btn-primary" id="submit" type="submit">Incluir</button>
             </form>
             
             <div class="text-center">
