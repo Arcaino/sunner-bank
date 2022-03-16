@@ -1,14 +1,11 @@
-import mainPageView from '../../views/pages/main-page/MainPage.js';
-
 class MainPageController{
 
     #homepage;
 
     constructor(){
-        
+
         this.#homepage = document.querySelector('#root'); 
-        this.#homepage.innerHTML = mainPageView.template();
+        this.#homepage.innerHTML = NegociacoesView.template();
+        new NegociacaoController;
     }
 }
-
-export default MainPageController;

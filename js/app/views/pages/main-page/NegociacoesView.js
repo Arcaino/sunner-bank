@@ -1,6 +1,4 @@
-import NegociacaoController from "../../../controllers/main-page/NegociacaoController.js";
-
-class MainPage{
+class NegociacoesView{
 
     static template(){
 
@@ -9,7 +7,7 @@ class MainPage{
         
             <div id="mensagemView"></div>
             
-            <form class="form" method="post" onsubmit="${NegociacaoController.incluir(event)}">
+            <form class="form" id="negociacoesForm">
                 
                 <div class="form-group">
                     <label for="data">Data</label>
@@ -40,5 +38,3 @@ class MainPage{
         `
     }
 }
-
-export default MainPage;
