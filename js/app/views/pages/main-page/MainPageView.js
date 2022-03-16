@@ -1,4 +1,4 @@
-class NegociacoesView{
+class MainPageView{
 
     static template(){
 
@@ -35,6 +35,10 @@ class NegociacoesView{
                     Apagar
                 </button>
             </div>
+
+            <br>
+
+            <div id="tableTarget"></div>
         `
     }
 }

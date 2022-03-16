@@ -3,6 +3,7 @@ class NegociacaoController{
     #inputData;
     #inputQuantidade;
     #inputValor;
+    #listaNegociacoes;
 
     constructor(){
 
@@ -12,6 +13,7 @@ class NegociacaoController{
         this.#inputQuantidade = $('#quantidade');
         this.#inputValor = $('#valor');
         this.#onInit();
+        this.#listaNegociacoes = new ListaNegociacoes();
     }
 
     #onInit(){
@@ -22,8 +24,9 @@ class NegociacaoController{
     #adiciona(event){
     
         event.preventDefault();
-        new ListaNegociacoes(this.#criaNegociacoes());
+        this.#listaNegociacoes.adiciona(this.#criaNegociacoes());
         this.#resetarFormulario();
+        TableView.update(this.#listaNegociacoes);
     }
 
     #resetarFormulario(){

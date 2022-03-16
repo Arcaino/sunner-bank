@@ -2,13 +2,18 @@ class ListaNegociacoes{
 
     #listaNegociacoes;
 
-    constructor(negociacao){
+    constructor(){
 
-        this.#listaNegociacoes = [].concat(negociacao);
+        this.#listaNegociacoes = [];
     }
 
     get listaNegociacoes(){
 
-        return this.#listaNegociacoes;
+        return [].concat(this.#listaNegociacoes);
+    }
+
+    adiciona(negociacao) {
+        
+        this.#listaNegociacoes.push(negociacao);
     }
 }
