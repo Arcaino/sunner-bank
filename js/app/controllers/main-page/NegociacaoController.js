@@ -11,6 +11,12 @@ class NegociacaoController{
         this.#inputValor = document.querySelector('#valor');
     }
 
+    static incluir(e){
+        if(e){
+
+            e.preventDefault();
+        }
+    }
 }
 
 export default NegociacaoController;
