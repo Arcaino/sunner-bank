@@ -1,6 +1,15 @@
 class MainPageView{
 
-    static template(){
+    #homepage
+
+    constructor(){
+
+        this.#homepage = document.querySelector('#root'); 
+        this.#homepage.innerHTML = this.#template();        
+        new NegociacaoController;
+    }
+
+    #template(){
 
         return `
             <h1 class="text-center">Negociações</h1>

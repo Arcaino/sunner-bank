@@ -1,5 +1,12 @@
 class TableView{
 
+    #tableTarget;
+
+    constructor(){
+
+        this.#tableTarget = document.querySelector('#tableTarget');
+    }
+
     #template(model){
 
         return `
@@ -31,9 +38,9 @@ class TableView{
         `
     }
 
-    static update(model){
+    update(model){
 
-        document.querySelector('#tableTarget').innerHTML = new TableView().#template(model);  
+        this.#tableTarget.innerHTML = this.#template(model);  
                   
     }
 }
